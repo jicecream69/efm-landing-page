@@ -1556,6 +1556,29 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .pricing-guarantee a:hover {
   color: rgba(255,255,255,0.75);
 }
+
+.pricing-team {
+  text-align: center;
+  margin-top: 32px;
+  font-size: var(--text-base);
+  color: rgba(255,255,255,0.45);
+  font-weight: 400;
+}
+.pricing-team strong {
+  color: rgba(255,255,255,0.7);
+  font-weight: 600;
+}
+.pricing-team-link {
+  color: var(--yellow);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 6px;
+  transition: opacity 0.2s;
+}
+.pricing-team-link:hover {
+  opacity: 0.8;
+}
+
 .efm-pricing-card {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.12);
