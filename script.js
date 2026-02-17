@@ -78,7 +78,9 @@ navToggle.addEventListener('click', function() {
 // ========================================
 document.querySelectorAll('a[href^="#"]').forEach(function(link) {
   link.addEventListener('click', function(e) {
-    var target = document.querySelector(link.getAttribute('href'));
+    var href = link.getAttribute('href');
+    if (href === '#') return;
+    var target = document.querySelector(href);
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });

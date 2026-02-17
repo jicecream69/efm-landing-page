@@ -890,7 +890,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
   transition: max-height 0.35s ease;
 }
-.module.open .module-body { max-height: 400px; }
+.module.open .module-body { max-height: 1000px; }
 .module-body ul { padding: 0 28px 24px 28px; }
 .module-body li {
   padding: 8px 0 8px 20px;
@@ -1633,7 +1633,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
   transition: max-height 0.35s ease;
 }
-.faq-item.open .faq-answer { max-height: 400px; }
+.faq-item.open .faq-answer { max-height: 1000px; }
 .faq-answer p {
   padding: 0 28px 22px;
   color: rgba(0,0,0,0.7);
