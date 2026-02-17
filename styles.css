@@ -552,7 +552,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(0,0,0,0.4);
+  color: var(--black);
   margin-bottom: 20px;
 }
 .wyg-pro-badge {
@@ -577,7 +577,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 0;
 }
 .wyg-block-text > p {
-  color: var(--dark-gray);
+  color: var(--black);
   font-size: 1.12rem;
   line-height: 1.85;
   margin-bottom: 32px;
@@ -594,7 +594,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 12px;
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--dark-gray);
+  color: var(--black);
   line-height: 1.45;
 }
 .wyg-bullet svg {
