@@ -141,6 +141,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(255,242,0,0.4);
 }
+.btn-gold {
+  background: linear-gradient(135deg, #d4a017, #f0c040, #e8a020, #f0c040, #d4a017);
+  background-size: 300% 300%;
+  color: var(--black);
+  animation: proBadgeGlow 4s ease infinite;
+  box-shadow: 0 4px 20px rgba(212,160,23,0.3);
+}
+.btn-gold:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 28px rgba(212,160,23,0.45);
+}
 .btn-outline {
   background: transparent;
   color: var(--black);
