@@ -463,6 +463,284 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================
+   WHAT YOU GET
+   ============================================ */
+
+/* Featured testimonial card */
+.wyg-quote-card {
+  max-width: 800px;
+  margin: 0 auto 96px;
+  background: var(--light-gray);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius);
+  padding: 40px 48px;
+  text-align: center;
+}
+.wyg-quote-card > p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  font-style: italic;
+  margin-bottom: 24px;
+  color: var(--dark-gray);
+}
+.wyg-stars {
+  color: #f59e0b;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+.wyg-quote-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.wyg-quote-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wyg-quote-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.wyg-quote-author strong {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--black);
+}
+.wyg-quote-author span {
+  font-size: 0.82rem;
+  color: rgba(0,0,0,0.45);
+  margin-left: 2px;
+}
+
+/* Feature blocks (alternating text/image) */
+.wyg-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.wyg-block-reverse .wyg-block-media {
+  order: -1;
+}
+.wyg-block-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(0,0,0,0.4);
+  margin-bottom: 16px;
+}
+.wyg-pro-badge {
+  background: var(--yellow);
+  color: var(--black);
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  margin-left: 4px;
+}
+.wyg-block-text h3 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+.wyg-block-text > p {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+.wyg-bullets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 28px;
+  margin-bottom: 32px;
+}
+.wyg-bullet {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  line-height: 1.4;
+}
+.wyg-bullet svg {
+  flex-shrink: 0;
+  color: #1a9a4d;
+}
+.wyg-block-ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.wyg-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #e8e8e8;
+  border-radius: var(--radius);
+}
+
+/* Mini testimonials between blocks */
+.wyg-mini-quote {
+  max-width: 680px;
+  margin: 0 auto 80px;
+  text-align: center;
+  padding: 24px 0;
+}
+.wyg-mini-quote .wyg-stars {
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+.wyg-mini-quote > p {
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  color: var(--dark-gray);
+}
+.wyg-mini-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.wyg-mini-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.wyg-mini-author strong {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--black);
+}
+.wyg-mini-author span {
+  font-size: 0.82rem;
+  color: rgba(0,0,0,0.45);
+  margin-left: 2px;
+}
+
+/* Bonus section (dark) */
+.wyg-bonus-section {
+  background: #0a0a0a;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+}
+.wyg-bonus-grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  pointer-events: none;
+  z-index: 0;
+}
+.wyg-bonus-section .container {
+  position: relative;
+  z-index: 1;
+}
+.wyg-bonus-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--yellow);
+  margin-bottom: 8px;
+}
+.wyg-bonus-sub {
+  font-family: var(--font-accent);
+  font-size: 1.6rem;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.wyg-bonus-section h2 {
+  color: var(--white);
+}
+.wyg-bonus-intro {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: rgba(255,255,255,0.5);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.65;
+  font-weight: 400;
+}
+.wyg-bonus-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.wyg-bonus-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  padding: 40px 32px;
+}
+.wyg-bonus-card-icon {
+  color: var(--yellow);
+  margin-bottom: 20px;
+}
+.wyg-bonus-card h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.wyg-bonus-card > p {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+.wyg-bonus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.wyg-bonus-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+}
+.wyg-bonus-list li::before {
+  content: '\2713';
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(32,177,90,0.15);
+  color: #4ade80;
+  font-size: 0.7rem;
+  font-weight: 900;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ============================================
    OUTCOMES
    ============================================ */
 .outcomes-grid {
@@ -1143,6 +1421,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-detail-value { font-size: 0.92rem; }
   .hero-logos-row { gap: 20px; }
 
+  /* What You Get */
+  .wyg-quote-card { padding: 28px 24px; margin-bottom: 64px; }
+  .wyg-block { grid-template-columns: 1fr; gap: 32px; margin-bottom: 32px; }
+  .wyg-block-reverse .wyg-block-media { order: 0; }
+  .wyg-mini-quote { margin-bottom: 56px; }
+  .wyg-bonus-section { padding: 60px 0; }
+  .wyg-bonus-cards { grid-template-columns: 1fr; }
+
   .nav-links {
     display: none;
     position: fixed;
@@ -1239,6 +1525,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .section h2 { font-size: 1.7rem; }
   .btn-lg { padding: 16px 28px; font-size: 1rem; }
   .testimonial-result { font-size: 1.7rem; }
+
+  /* What You Get */
+  .wyg-bullets { grid-template-columns: 1fr; }
+  .wyg-block-text h3 { font-size: 1.6rem; }
+  .wyg-bonus-sub { font-size: 1.3rem; }
 
   /* Stats */
   .results-stats-bar { grid-template-columns: 1fr 1fr; gap: 16px; }
