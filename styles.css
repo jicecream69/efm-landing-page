@@ -254,7 +254,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.btn-guarantee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: rgba(255,255,255,0.55);
   margin-bottom: 48px;
+}
+.btn-guarantee svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 .btn-white {
   background: var(--white);
@@ -370,16 +385,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-logos-row {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   flex-wrap: wrap;
 }
-.hero-logos-row span {
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--black);
-  opacity: 0.2;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.company-logo {
+  height: 28px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.company-logo:hover {
+  opacity: 0.6;
+}
+.company-logo-square {
+  height: 32px;
 }
 
 @keyframes heroFadeLift {
@@ -1120,63 +1141,93 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ============================================
    IS THIS FOR YOU?
    ============================================ */
-.fit-grid {
+.persona-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  max-width: 900px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1300px;
   margin: 0 auto;
 }
-.fit-col {
+.persona-card {
   background: var(--white);
   border: 1px solid var(--border-gray);
   border-radius: var(--radius);
-  padding: 40px 36px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.fit-col-header {
-  font-size: var(--text-xl);
+.persona-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+.persona-img {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+.persona-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.persona-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 60%);
+  pointer-events: none;
+}
+.persona-label {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  z-index: 1;
+  font-size: var(--text-sm);
   font-weight: 700;
-  margin-bottom: 28px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--border-gray);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 999px;
 }
-.fit-col-header-yes {
-  color: #1a9a4d;
+.persona-body {
+  padding: 28px 28px 32px;
 }
-.fit-col-header-no {
-  color: #dc2626;
+.persona-card h3 {
+  font-size: clamp(1.25rem, 2vw, 1.45rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
 }
-.fit-list {
+.persona-sub {
+  color: var(--dark-gray);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+.persona-benefits {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
 }
-.fit-list li {
+.persona-benefits li {
+  list-style: none;
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  font-size: var(--text-lg);
-  line-height: 1.5;
+  gap: 10px;
   color: var(--dark-gray);
+  font-size: var(--text-base);
+  line-height: 1.45;
   font-weight: 500;
 }
-.fit-icon {
+.persona-benefits svg {
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  color: #1a8f43;
   margin-top: 2px;
-}
-.fit-icon-yes {
-  background: rgba(32,177,90,0.12);
-  color: #1a9a4d;
-}
-.fit-icon-no {
-  background: rgba(220,38,38,0.1);
-  color: #dc2626;
 }
 
 /* ============================================
@@ -1436,13 +1487,74 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 400;
 }
 
+/* Enroll steps */
+.enroll-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.enroll-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.enroll-step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--black);
+  font-weight: 700;
+  font-size: var(--text-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.enroll-step p {
+  font-size: var(--text-lg);
+  color: rgba(255,255,255,0.85);
+  font-weight: 600;
+  margin: 0;
+}
+
 /* EFM Pricing Cards */
 .efm-pricing-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1.15fr;
   gap: 24px;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
+  align-items: start;
+}
+.pricing-guarantee {
+  margin: 40px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: rgba(255,255,255,0.5);
+}
+.pricing-guarantee svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #4ade80;
+}
+.pricing-guarantee a {
+  color: rgba(255,255,255,0.5);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.pricing-guarantee a:hover {
+  color: rgba(255,255,255,0.75);
 }
 .efm-pricing-card {
   background: rgba(255,255,255,0.06);
@@ -1466,6 +1578,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .efm-pricing-card-inner {
   padding: 40px 36px 36px;
+}
+.efm-pricing-card-featured .efm-pricing-card-inner {
+  padding: 48px 42px 42px;
 }
 .efm-pricing-card-name {
   font-size: var(--text-2xl);
@@ -1529,7 +1644,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--white);
   border: 1px solid rgba(255,255,255,0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
+}
+.btn-guarantee-card {
+  color: rgba(255,255,255,0.4);
+  font-size: var(--text-sm);
+  margin-bottom: 24px;
+}
+.btn-guarantee-card svg {
+  color: #4ade80;
 }
 .efm-pricing-card-btn:hover {
   transform: translateY(-2px);
@@ -1746,6 +1869,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-detail-icon { width: 15px; height: 15px; }
   .hero-detail-value { font-size: var(--text-base); }
   .hero-logos-row { gap: 20px; }
+  .company-logo { height: 22px; }
+  .company-logo-square { height: 26px; }
 
   /* What You Get */
   .wyg-block { grid-template-columns: 1fr; gap: 32px; margin-bottom: 20px; padding: 36px 28px; }
@@ -1808,8 +1933,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .results-inline-proof { flex-direction: column; gap: 12px; text-align: center; }
   .results-inline-divider { display: none; }
 
-  /* Fit */
-  .fit-grid { grid-template-columns: 1fr; }
+  /* Persona */
+  .persona-grid { grid-template-columns: 1fr; gap: 16px; }
 
   /* Mentor */
   .mentor-section { grid-template-columns: 1fr; gap: 32px; text-align: center; }
@@ -1820,6 +1945,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .social-proof-section { padding: 60px 0 0; }
   .carousel-strip { margin-top: 48px; padding-bottom: 60px; }
   .carousel-track img { height: 260px; }
+
+  /* Enroll steps */
+  .enroll-steps { gap: 24px; flex-wrap: wrap; }
+  .enroll-step-num { width: 30px; height: 30px; font-size: var(--text-sm); }
+  .enroll-step p { font-size: var(--text-base); }
 
   /* Pricing */
   .section-pricing { padding: 60px 0 50px; }
@@ -1873,6 +2003,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-testimonial-number { font-size: 4.5rem; }
   .result-card { padding: 28px 24px; }
   .result-card-metric { font-size: 1.8rem; }
+  .hero-logos-row { gap: 16px; }
+  .company-logo { height: 18px; }
+  .company-logo-square { height: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
