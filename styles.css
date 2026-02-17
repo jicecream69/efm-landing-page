@@ -556,14 +556,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 20px;
 }
 .wyg-pro-badge {
-  background: var(--yellow);
-  color: var(--black);
-  font-size: 0.7rem;
-  font-weight: 800;
-  padding: 3px 10px;
-  border-radius: 4px;
-  letter-spacing: 0.06em;
-  margin-left: 4px;
+  background: linear-gradient(135deg, #f6d365, #fda085, #f6d365);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 0.78rem;
+  font-weight: 900;
+  padding: 0;
+  letter-spacing: 0.08em;
+  margin-left: 6px;
+  animation: proBadgeGlow 4s ease infinite;
+}
+@keyframes proBadgeGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 .wyg-block-text h3 {
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
