@@ -556,16 +556,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 20px;
 }
 .wyg-pro-badge {
-  background: linear-gradient(135deg, #f6d365, #fda085, #f6d365);
+  background: linear-gradient(135deg, #d4a017, #f0c040, #e8a020, #f0c040, #d4a017);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 0.78rem;
+  font-size: 1.1rem;
   font-weight: 900;
   padding: 0;
-  letter-spacing: 0.08em;
-  margin-left: 6px;
+  letter-spacing: 0.1em;
+  margin-left: 8px;
   animation: proBadgeGlow 4s ease infinite;
 }
 @keyframes proBadgeGlow {
