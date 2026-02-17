@@ -466,6 +466,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    WHAT YOU GET
    ============================================ */
 
+#what-you-get .section-header {
+  margin-bottom: 80px;
+}
+
 /* Featured testimonial card */
 .wyg-quote-card {
   max-width: 800px;
@@ -521,9 +525,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .wyg-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: 80px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 96px;
 }
 .wyg-block-reverse .wyg-block-media {
   order: -1;
@@ -537,7 +541,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba(0,0,0,0.4);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .wyg-pro-badge {
   background: var(--yellow);
@@ -559,24 +563,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .wyg-block-text > p {
   color: var(--dark-gray);
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 28px;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 32px;
 }
 .wyg-bullets {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px 28px;
-  margin-bottom: 32px;
+  gap: 16px 32px;
+  margin-bottom: 36px;
 }
 .wyg-bullet {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 0.92rem;
+  gap: 12px;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--dark-gray);
-  line-height: 1.4;
+  line-height: 1.45;
 }
 .wyg-bullet svg {
   flex-shrink: 0;
@@ -590,26 +594,30 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .wyg-placeholder {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background: #e8e8e8;
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
   border-radius: var(--radius);
+  border: 1px solid var(--border-gray);
 }
 
 /* Mini testimonials between blocks */
 .wyg-mini-quote {
   max-width: 680px;
-  margin: 0 auto 80px;
+  margin: 0 auto 96px;
   text-align: center;
-  padding: 24px 0;
+  padding: 40px 48px;
+  background: var(--light-gray);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius);
 }
 .wyg-mini-quote .wyg-stars {
   font-size: 0.85rem;
   margin-bottom: 12px;
 }
 .wyg-mini-quote > p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-style: italic;
-  line-height: 1.75;
-  margin-bottom: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
   color: var(--dark-gray);
 }
 .wyg-mini-author {
@@ -1423,9 +1431,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   /* What You Get */
   .wyg-quote-card { padding: 28px 24px; margin-bottom: 64px; }
-  .wyg-block { grid-template-columns: 1fr; gap: 32px; margin-bottom: 32px; }
+  .wyg-block { grid-template-columns: 1fr; gap: 32px; margin-bottom: 64px; }
   .wyg-block-reverse .wyg-block-media { order: 0; }
-  .wyg-mini-quote { margin-bottom: 56px; }
+  .wyg-mini-quote { margin-bottom: 64px; padding: 28px 24px; }
   .wyg-bonus-section { padding: 60px 0; }
   .wyg-bonus-cards { grid-template-columns: 1fr; }
 
