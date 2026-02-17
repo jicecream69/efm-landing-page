@@ -1174,39 +1174,61 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ============================================
-   TRUST BAR (35,000+ trained)
+   SOCIAL PROOF + CAROUSEL
    ============================================ */
-.trust-bar-section {
-  padding: 80px 0;
+.social-proof-section {
+  padding: 100px 0 0;
 }
-.trust-bar-section h2 {
-  margin-bottom: 20px;
+.social-proof-headline {
+  font-size: clamp(2.6rem, 5.5vw, 4rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px !important;
 }
-.trust-bar-section .section-intro {
-  margin-bottom: 48px;
+.social-proof-headline em {
+  font-style: italic;
+}
+.social-proof-sub {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--dark-gray);
+  max-width: 680px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  font-weight: 500;
 }
 .trust-logos-row {
   padding-top: 32px;
   border-top: 1px solid var(--border-gray);
 }
 
-/* ============================================
-   PHOTO STRIP
-   ============================================ */
-.photo-strip {
+/* Auto-scrolling carousel */
+.carousel-strip {
   overflow: hidden;
-  background: var(--black);
-  padding: 6px 0;
+  margin-top: 72px;
+  padding: 0 0 100px;
 }
-.photo-strip-inner {
+.carousel-track {
   display: flex;
-  gap: 6px;
+  gap: 10px;
+  width: max-content;
+  animation: carouselScroll 40s linear infinite;
 }
-.photo-strip-inner img {
-  height: 220px;
+.carousel-track img {
+  height: 380px;
   width: auto;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
+  border-radius: 12px;
   flex-shrink: 0;
+  box-shadow: 0 20px 20px -10px rgba(0,0,0,0.08);
+}
+@keyframes carouselScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.carousel-track:hover {
+  animation-play-state: paused;
 }
 
 /* ============================================
@@ -1751,8 +1773,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .mentor-placeholder { margin: 0 auto; max-width: 280px; }
   .mentor-photo { margin: 0 auto; max-width: 280px; }
 
-  /* Photo strip */
-  .photo-strip-inner img { height: 160px; }
+  /* Carousel */
+  .social-proof-section { padding: 60px 0 0; }
+  .carousel-strip { margin-top: 48px; padding-bottom: 60px; }
+  .carousel-track img { height: 260px; }
 
   /* Pricing */
   .section-pricing { padding: 60px 0 50px; }
@@ -1768,9 +1792,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .efm-pricing-card-price {
     font-size: 2.2rem;
   }
-
-  /* Trust bar */
-  .trust-bar-section { padding: 60px 0; }
 
   /* Footer */
   .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
@@ -1799,6 +1820,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .wyg-block-text h3 { font-size: 1.6rem; }
   .wyg-bonus-sub { font-size: 1.3rem; }
 
+  /* Carousel */
+  .carousel-track img { height: 200px; }
+
   /* Proof Banner + Testimonials */
   .proof-banner-inner { grid-template-columns: 1fr 1fr; gap: 20px; }
   .proof-stat-number { font-size: 2.2rem; }
@@ -1818,6 +1842,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .carousel-track {
+    animation: none;
   }
 }
 
