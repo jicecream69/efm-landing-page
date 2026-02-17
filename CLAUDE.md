@@ -1,5 +1,10 @@
 # Emergent Facilitation Mastery Landing Page
 
+## Deployment
+- **GitHub:** https://github.com/jicecream69/efm-landing-page
+- **Live (Vercel):** https://efm-landing-page.vercel.app
+- Auto-deploys on push to main
+
 ## What This Is
 Single long-form sales page for **Emergent Facilitation Mastery**, a virtual-only, self-paced facilitation training program. Always-open enrollment. Two tiers: Core and Pro. This is the flagship (and only) way to learn Emergent Facilitation / ECS online. In-person programs are completely separate and NOT mentioned on this page.
 
@@ -124,14 +129,14 @@ The page follows the PAS (Problem-Agitate-Solution) framework:
 14. **Final CTA** — Dark section. Narrative closure. "You Started Reading This Page for a Reason."
 15. **Footer** — White, logo + copyright.
 
-### Module Titles (outcome-focused)
-1. "Stop Being the Hero. Start Being the Guide."
-2. "The Universal Structure Behind Every Great Workshop"
-3. "10 Exercises That Handle Any Workshop Scenario"
-4. "Ready-to-Run Workshops You Can Sell Tomorrow"
-5. "What To Do When Everything Goes Off-Script"
-6. "How to Charge $5k-$15k Per Workshop (And Get It)"
-7. "Finding Clients and Writing Proposals That Close"
+### Module Titles (based on FSF Palo Alto 2025 transcript analysis)
+1. "Why Facilitation Changes Everything"
+2. "The 4 Principles That Make Every Session Work"
+3. "Becoming an Unshakeable Facilitator"
+4. "The 6 Core Skills of a Facilitator"
+5. "The 4C's: The Structure Behind Every Great Workshop"
+6. "The Toolkit: Exercises, Activities, and Workshop Recipes"
+7. "Building Your Facilitation Business"
 
 ### Student Results Referenced
 - Emily: $40k first ECS workshop deal
