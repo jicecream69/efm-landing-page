@@ -537,11 +537,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .wyg-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: 72px;
   align-items: center;
   margin-bottom: 28px;
-  padding: 56px 64px;
+  padding: 64px 72px;
   border-radius: var(--radius);
+}
+#what-you-get .container {
+  max-width: 1600px;
+  padding: 0 2rem;
 }
 .wyg-block-blue {
   background: #f0f4ff;
@@ -637,6 +641,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: var(--radius);
   object-fit: cover;
   aspect-ratio: 4 / 3;
+  min-height: 380px;
 }
 
 /* Mini testimonials between blocks */
