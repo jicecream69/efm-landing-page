@@ -526,9 +526,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .wyg-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 64px;
   align-items: center;
-  margin-bottom: 96px;
+  margin-bottom: 28px;
+  padding: 56px 64px;
+  border-radius: var(--radius);
+}
+.wyg-block-blue {
+  background: #f0f4ff;
+}
+.wyg-block-green {
+  background: #eef9f3;
+}
+.wyg-block-amber {
+  background: #fffbeb;
 }
 .wyg-block-reverse .wyg-block-media {
   order: -1;
@@ -561,6 +572,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: -0.025em;
   color: var(--black);
   margin-bottom: 20px;
+}
+.wyg-block:last-child {
+  margin-bottom: 0;
 }
 .wyg-block-text > p {
   color: var(--dark-gray);
@@ -1703,10 +1717,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-logos-row { gap: 20px; }
 
   /* What You Get */
-  .wyg-quote-card { padding: 28px 24px; margin-bottom: 64px; }
-  .wyg-block { grid-template-columns: 1fr; gap: 32px; margin-bottom: 64px; }
+  .wyg-block { grid-template-columns: 1fr; gap: 32px; margin-bottom: 20px; padding: 36px 28px; }
   .wyg-block-reverse .wyg-block-media { order: 0; }
-  .wyg-mini-quote { margin-bottom: 64px; padding: 28px 24px; }
   .wyg-bonus-section { padding: 60px 0; }
   .wyg-bonus-cards { grid-template-columns: 1fr; }
 
