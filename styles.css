@@ -24,7 +24,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: 70px; }
 body {
   font-family: var(--font-primary), var(--font-fallback);
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--dark-gray);
   background: var(--white);
@@ -92,7 +92,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .nav-links a {
   color: rgba(255,255,255,0.7);
-  font-size: 0.88rem;
+  font-size: 0.94rem;
   font-weight: 600;
   transition: color 0.2s;
   white-space: nowrap;
@@ -103,7 +103,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: transparent;
   color: var(--white);
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.94rem;
   padding: 10px 24px;
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.3);
@@ -176,7 +176,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -273,7 +273,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
   gap: 8px;
   color: rgba(255,255,255,0.74);
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.015em;
 }
@@ -318,7 +318,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -335,7 +335,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
 }
 .hero-detail-value {
-  font-size: 1.02rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.35;
   color: var(--white);
@@ -356,7 +356,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-wrap: wrap;
 }
 .hero-logos-row span {
-  font-size: 0.78rem;
+  font-size: 0.83rem;
   font-weight: 700;
   color: var(--black);
   opacity: 0.2;
@@ -393,7 +393,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .section-header { margin-bottom: 72px; }
 
 .section-label {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -401,7 +401,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 24px;
 }
 .section-label-light {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -450,7 +450,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 20px;
 }
 .diff-card h4 {
-  font-size: 1.15rem;
+  font-size: 1.33rem;
   font-weight: 800;
   margin-bottom: 12px;
   color: var(--black);
@@ -458,7 +458,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .diff-card p {
   color: rgba(0,0,0,0.5);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   line-height: 1.75;
 }
 
@@ -481,7 +481,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-align: center;
 }
 .wyg-quote-card > p {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.85;
   font-style: italic;
   margin-bottom: 24px;
@@ -513,11 +513,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .wyg-quote-author strong {
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 1rem;
   color: var(--black);
 }
 .wyg-quote-author span {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: rgba(0,0,0,0.45);
   margin-left: 2px;
 }
@@ -537,7 +537,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -547,7 +547,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .wyg-pro-badge {
   background: var(--yellow);
   color: var(--black);
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   font-weight: 800;
   padding: 3px 10px;
   border-radius: 4px;
@@ -564,7 +564,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .wyg-block-text > p {
   color: var(--dark-gray);
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   line-height: 1.85;
   margin-bottom: 32px;
 }
@@ -578,7 +578,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--dark-gray);
   line-height: 1.45;
@@ -617,11 +617,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: var(--radius);
 }
 .wyg-mini-quote .wyg-stars {
-  font-size: 0.85rem;
+  font-size: 1rem;
   margin-bottom: 12px;
 }
 .wyg-mini-quote > p {
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-style: italic;
   line-height: 1.8;
   margin-bottom: 18px;
@@ -642,11 +642,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .wyg-mini-author strong {
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: var(--black);
 }
 .wyg-mini-author span {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: rgba(0,0,0,0.45);
   margin-left: 2px;
 }
@@ -672,7 +672,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   z-index: 1;
 }
 .wyg-bonus-eyebrow {
-  font-size: 0.78rem;
+  font-size: 0.83rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -714,7 +714,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 20px;
 }
 .wyg-bonus-card h4 {
-  font-size: 1.15rem;
+  font-size: 1.33rem;
   font-weight: 800;
   color: var(--white);
   margin-bottom: 12px;
@@ -722,7 +722,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .wyg-bonus-card > p {
   color: rgba(255,255,255,0.6);
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   line-height: 1.75;
   margin-bottom: 24px;
 }
@@ -735,7 +735,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   font-weight: 500;
   color: rgba(255,255,255,0.7);
   line-height: 1.5;
@@ -779,7 +779,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 18px;
 }
 .outcome-card h4 {
-  font-size: 1.08rem;
+  font-size: 1.22rem;
   font-weight: 800;
   margin-bottom: 10px;
   color: var(--black);
@@ -787,7 +787,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .outcome-card p {
   color: rgba(0,0,0,0.5);
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   line-height: 1.7;
 }
 
@@ -813,12 +813,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .module-header h4 {
   flex: 1;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--black);
 }
 .module-num {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -851,7 +851,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 8px 0 8px 20px;
   position: relative;
   color: rgba(0,0,0,0.5);
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   line-height: 1.55;
 }
 .module-body li::before {
@@ -905,7 +905,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .proof-stat-label {
   display: block;
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: rgba(255,255,255,0.6);
   font-weight: 500;
   line-height: 1.4;
@@ -938,7 +938,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .hero-testimonial-label {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -973,7 +973,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--white);
 }
 .hero-testimonial-author span {
-  font-size: 0.85rem;
+  font-size: 0.94rem;
   color: rgba(255,255,255,0.5);
   font-weight: 500;
 }
@@ -1002,7 +1002,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 4px;
 }
 .result-card-metric-label {
-  font-size: 0.75rem;
+  font-size: 0.83rem;
   font-weight: 700;
   color: var(--black);
   text-transform: uppercase;
@@ -1011,7 +1011,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   opacity: 0.4;
 }
 .result-card-quote {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--dark-gray);
   font-weight: 500;
   line-height: 1.75;
@@ -1034,11 +1034,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .result-card-author strong {
   display: block;
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 1rem;
   color: var(--black);
 }
 .result-card-author span {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--black);
   font-weight: 500;
   opacity: 0.5;
@@ -1055,7 +1055,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-top: 1px solid var(--border-gray);
 }
 .results-inline-item {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   color: var(--dark-gray);
   font-weight: 500;
 }
@@ -1089,7 +1089,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 40px 36px;
 }
 .fit-col-header {
-  font-size: 1.15rem;
+  font-size: 1.33rem;
   font-weight: 800;
   margin-bottom: 28px;
   padding-bottom: 20px;
@@ -1110,7 +1110,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  font-size: 0.98rem;
+  font-size: 1.1rem;
   line-height: 1.55;
   color: var(--dark-gray);
   font-weight: 500;
@@ -1164,7 +1164,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: var(--radius);
 }
 .mentor-text h2 { margin-bottom: 20px; }
-.mentor-text p { color: rgba(0,0,0,0.5); margin-bottom: 18px; font-size: 1rem; line-height: 1.8; }
+.mentor-text p { color: rgba(0,0,0,0.5); margin-bottom: 18px; font-size: 1.12rem; line-height: 1.8; }
 .mentor-quote {
   font-family: var(--font-accent);
   font-size: 1.4rem;
@@ -1263,7 +1263,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   z-index: -1;
 }
 .reviews-wall-right p {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.8;
   color: var(--dark-gray);
   margin-bottom: 12px;
@@ -1297,12 +1297,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .review-wall-stars {
   color: #f59e0b;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   letter-spacing: 2px;
   margin-bottom: 14px;
 }
 .review-wall-card > p {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   line-height: 1.75;
   color: var(--dark-gray);
   font-weight: 500;
@@ -1336,11 +1336,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .review-wall-author strong {
   display: block;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--black);
 }
 .review-wall-author span {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   color: var(--black);
   opacity: 0.5;
   font-weight: 500;
@@ -1351,7 +1351,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding-top: 24px;
 }
 .reviews-wall-cta-text {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: var(--dark-gray);
   margin-bottom: 28px;
   font-weight: 500;
@@ -1433,7 +1433,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 12px;
 }
 .efm-pricing-badge {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.04em;
   background: var(--yellow);
@@ -1464,7 +1464,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: rgba(255,255,255,0.35);
 }
 .efm-pricing-card-payment {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: rgba(255,255,255,0.45);
   font-weight: 500;
   margin-bottom: 24px;
@@ -1509,7 +1509,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: rgba(255,242,0,0.15);
 }
 .efm-pricing-card-includes {
-  font-size: 0.85rem;
+  font-size: 0.94rem;
   font-weight: 700;
   color: rgba(255,255,255,0.6);
   margin-bottom: 16px;
@@ -1525,7 +1525,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: rgba(255,255,255,0.7);
   line-height: 1.5;
   font-weight: 500;
@@ -1569,7 +1569,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: space-between;
   width: 100%;
   padding: 20px 28px;
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 600;
   color: var(--black);
   text-align: left;
@@ -1592,7 +1592,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .faq-answer p {
   padding: 0 28px 22px;
   color: rgba(0,0,0,0.5);
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   line-height: 1.8;
 }
 
@@ -1619,12 +1619,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .footer-badge {
   background: var(--yellow);
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 700;
   padding: 2px 6px;
   border-radius: 3px;
 }
-.footer-copy { font-size: 0.8rem; color: rgba(0,0,0,0.35); }
+.footer-copy { font-size: 0.88rem; color: rgba(0,0,0,0.35); }
 
 /* ---- VIDEO MODAL ---- */
 .video-modal {
