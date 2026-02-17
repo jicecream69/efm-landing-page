@@ -89,45 +89,29 @@ The universal structure behind every great workshop:
 - We offer a **certificate of completion**, NOT certification (important distinction)
 - CTA language: "Enroll Now" / "Start Today"
 
-## Narrative Arc
-The page follows the PAS (Problem-Agitate-Solution) framework:
-**Understood → Uncomfortable → Hopeful → Excited → Confident → Decided**
-
-## Current Design
-
-### Hero Section
-- **Dark mode** (`#0a0a0a` background), centered layout
-- **Label**: Yellow dot + "ONLINE • SELF-PACED" in white, 13px, 800 weight, 0.14em letter-spacing
-- **Headline**: "Become the most valuable person on every project." with animated gradient on "most valuable"
-- **Sub**: "**Emergent Facilitation Mastery** is the most complete and future-proofed facilitation training on the planet."
-- **CTAs**: White "Enroll Now" button + ghost outline "See How It Works"
-- **Wistia video** (media-id: ghi1nw7dk7)
-- **Details bar**: Format, Duration, Starting At ($1,997), Certificate of Completion
-- **Trust row**: 35,000+ trained, 9,700+ community members, Trusted by global teams
-- Hero content max-width: 960px. Video max-width: 960px.
+## Page Structure
+Clean, product-focused layout inspired by the Workshopper Master page. No heavy narrative or PAS framework. Direct and scannable.
 
 ### Nav
 - **Dark theme permanently**. Background: `rgba(18,18,18,0.85)` with blur.
 - **Edge-to-edge** with 4rem padding
 - White text, white outline CTA button ("Enroll Now")
-- Links: The ECS System, Curriculum, Results, Pricing, FAQs
+- Links: What's Different, Curriculum, Results, Pricing, FAQs
 
-### Page Section Order (13 sections)
+### Page Section Order (12 sections)
 1. **Nav** — Fixed, dark glass, edge-to-edge
-2. **Hero** — Dark bg, centered, Wistia video, details bar, trust pills
+2. **Hero** — Dark bg, centered, Wistia video (media-id: ghi1nw7dk7), details bar, trust pills
 3. **Logo Bar** — Company logos (Google, LEGO, P&G, etc.), white bg
-4. **Pain / Problem ("I See You")** — White section, text-focused. PAS opening. Reader's daily experience described with uncomfortable accuracy.
-5. **The Shift / Bridge** — Light gray section, text-focused. Challenges "more tools" mental model. Introduces ECS by name.
-6. **ECS System Reveal** — Dark/black section. Three pillar cards (Mindset, Model, Tools) + Regular vs ECS comparison table. Premium feel.
-7. **Transformation Outcomes** — White section, 3-column grid. "What You'll Be Able To Do" with 6 capability statements.
-8. **Curriculum** — Light gray section, 7 module accordion. Outcome-focused module titles.
-9. **Testimonials / Social Proof** — White section. Stats bar (44% earned more, $30k avg increase, 50%+ results <12 months, 88% enjoy work more) + 4 testimonial cards + quick results grid.
-10. **Is This For You?** — Light gray section, two-column layout. "For you if..." / "NOT for you if..." with checkmarks and X marks.
-11. **Jonathan / Your Mentor** — White section, grid layout with placeholder avatar.
-12. **Choose Your Path / Pricing** — Dark section, Core vs Pro side-by-side. KEEP AS-IS.
-13. **FAQ** — White section, accordion. Objection-handling format with 9 questions ordered by objection severity.
-14. **Final CTA** — Dark section. Narrative closure. "You Started Reading This Page for a Reason."
-15. **Footer** — White, logo + copyright.
+4. **What's Different** — White section, "This isn't just another facilitation course." 3 cards: ECS System, Coaching & Community, Business Training
+5. **Outcomes** — Light gray section, 6-card grid. "Skills You Can Use Monday Morning"
+6. **Results / Testimonials** — White section. Stats bar + 4 testimonial cards + quick results grid
+7. **Curriculum** — Light gray section, 7 module accordion
+8. **Is This For You?** — White section, two-column layout. For you / NOT for you
+9. **Your Instructor** — Light gray section, Jonathan bio with placeholder avatar
+10. **Trust Bar** — White section, "We've trained over 35,000 people" + logos
+11. **Pricing** — Dark section, Core vs Pro side-by-side
+12. **FAQ** — White section, 9-question accordion
+13. **Footer** — White, logo + copyright
 
 ### Module Titles (based on FSF Palo Alto 2025 transcript analysis)
 1. "Why Facilitation Changes Everything"
@@ -152,6 +136,9 @@ The page follows the PAS (Problem-Agitate-Solution) framework:
 - `styles.css` — All styling
 - `script.js` — FAQ/module accordions, mobile nav, smooth scroll
 - `facilitator-com-style-guide.md` — Reference style guide
+- `EFM-PRODUCT-SPEC.md` — Comprehensive product spec (modules, pricing, content breakdown, competitive positioning). Read this for full product context.
+- `EFM course content/_FSF Palo Alto 2025 - Video Transcripts.md` — Raw transcript of the 5-day FSF live event (~4,200 lines). Source material for EFM course content.
+- `EFM course content/ECS Training Manual.md` — ECS methodology reference
 
 ## Tech
 - Vanilla HTML/CSS/JS, no frameworks
@@ -181,9 +168,9 @@ The page follows the PAS (Problem-Agitate-Solution) framework:
 ## CSS Notes
 - Accessibility/contrast override block at bottom of `styles.css` uses `!important` rules. Check there first if edits seem to not apply.
 - Trust reveal behavior is in `script.js` under `// Hero trust row reveal`
-- New sections use text-focused layouts (pain, bridge) rather than card grids
-- ECS section has three-pillar cards + comparison table
+- "What's Different" section uses `.diff-cards` 3-column grid with `.diff-card` items
 - "Is This For You?" uses two-column fit-grid with icons
+- Trust Bar uses `.trust-bar-section` with repeated logo row
 
 ## Important Language Rules
 - We offer a **certificate of completion**, NOT certification
