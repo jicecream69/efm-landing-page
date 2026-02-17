@@ -1212,7 +1212,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   gap: 10px;
   width: max-content;
-  animation: carouselScroll 40s linear infinite;
+  animation: carouselScroll 80s linear infinite;
 }
 .carousel-track img {
   height: 380px;
